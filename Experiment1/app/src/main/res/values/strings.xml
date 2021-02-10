@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Experiment1</string>
+    <string name="name">Name</string>
+    <string name="what_s_my_name">What\'s my name?</string>
+</resources>
