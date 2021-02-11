@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Experiment1</string>
-    <string name="name">Name</string>
-    <string name="what_s_my_name">What\'s my name?</string>
+    <string name="app_name">Experiment2</string>
+    <string name="app_dev_head">Mobile App Dev Lab</string>
+    <string name="name_rollno">- Naren Sairam (106118062)</string>
 </resources>
