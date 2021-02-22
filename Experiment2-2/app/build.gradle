@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.appdevlab.experiment4"
+        applicationId "com.appdevlab.experiment3"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -31,4 +31,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.gbenroscience:parserng-android:0.1.1'
+
 }

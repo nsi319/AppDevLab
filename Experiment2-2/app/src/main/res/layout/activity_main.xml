@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_blue_light"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="MOBILE CALCULATOR"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:foregroundGravity="center" >
+
+        <Button
+            android:id="@+id/num1"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/num2"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="2" />
+
+    <Button
+        android:id="@+id/num3"
+        android:onClick="inputNum"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="3" />
+
+        <Button
+            android:id="@+id/add"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:foregroundGravity="center" >
+
+        <Button
+            android:id="@+id/num4"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/num5"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/num6"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/sub"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="-" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:foregroundGravity="center" >
+
+        <Button
+            android:id="@+id/num7"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/num8"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/num9"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/mul"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="*" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:foregroundGravity="center" >
+
+        <Button
+            android:id="@+id/numdec"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="." />
+
+
+        <Button
+            android:id="@+id/num0"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/clear"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="C" />
+
+
+
+        <Button
+            android:id="@+id/div"
+            android:onClick="inputNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="/" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/equal"
+        android:onClick="inputNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="=" />
+
+    </LinearLayout>
+
+</LinearLayout>
