@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Experiment5</string>
+    <string name="mobile_application_development_lab_5">Mobile Application Development Lab 5</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="name">Name</string>
+    <string name="submit">SUBMIT</string>
+</resources>
