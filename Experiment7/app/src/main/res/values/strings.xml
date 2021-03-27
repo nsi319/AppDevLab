@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Experiment7</string>
+    <string name="my_apps">My Apps</string>
+    <string name="selfie">Selfie</string>
+    <string name="control">Control</string>
+    <string name="exit">Exit</string>
+</resources>
