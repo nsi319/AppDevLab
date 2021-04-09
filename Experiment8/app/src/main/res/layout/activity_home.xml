@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+            android:text="Course Registration"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text=""
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:textSize="16sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="40dp"
+            >
+
+            <TableRow>
+                <TextView android:text="Course Name"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_column="0"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_weight="10"/>
+                <TextView android:text="Course Faculty"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_column="1"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_weight="6">
+                </TextView>
+                <TextView android:text="Action"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_column="2"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:layout_weight="2">
+                </TextView>
+            </TableRow>
+        </TableLayout>
+
+
+        <ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+                <TableLayout android:id="@+id/score_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    >
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="7dp">
+                        <TextView android:text="Mobile App Dev"
+                            android:layout_height="40dp"
+                            android:layout_column="0"
+                            android:textSize="15sp"
+                            android:layout_weight="10">
+                        </TextView>
+                        <TextView android:text="Dr. P. KUMARAN"
+                            android:layout_height="40dp"
+                            android:layout_column="1"
+                            android:textSize="15sp"
+                            android:layout_weight="7">
+                        </TextView>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:onClick="checkbox_clicked"
+                            android:id="@+id/sub1"
+                            />
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="7dp">
+                        <TextView android:text="Cryptography"
+                            android:layout_height="40dp"
+                            android:layout_column="0"
+                            android:textSize="15sp"
+                            android:layout_weight="10">
+                        </TextView>
+                        <TextView android:text="Dr. C. MALA"
+                            android:layout_height="40dp"
+                            android:layout_column="1"
+                            android:textSize="15sp"
+                            android:layout_weight="7">
+                        </TextView>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:onClick="checkbox_clicked"
+                            android:id="@+id/sub2"
+                            />
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="7dp">
+                        <TextView android:text="DWDM"
+                            android:layout_height="40dp"
+                            android:layout_column="0"
+                            android:textSize="15sp"
+                            android:layout_weight="10">
+                        </TextView>
+                        <TextView android:text="Dr. E.SIVA SANKAR"
+                            android:layout_height="40dp"
+                            android:layout_column="1"
+                            android:textSize="15sp"
+                            android:layout_weight="7">
+                        </TextView>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:onClick="checkbox_clicked"
+                            android:id="@+id/sub3"
+                            />
+                    </TableRow>
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="7dp">
+                        <TextView android:text="Industrial lecture"
+                            android:layout_height="40dp"
+                            android:layout_column="0"
+                            android:textSize="15sp"
+                            android:layout_weight="10">
+                        </TextView>
+                        <TextView android:text="Dr. M. SRIDEVI"
+                            android:layout_height="40dp"
+                            android:layout_column="1"
+                            android:textSize="15sp"
+                            android:layout_weight="7">
+                        </TextView>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:onClick="checkbox_clicked"
+                            android:id="@+id/sub4"
+                            />
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="7dp">
+                        <TextView android:text="Randomized Algos"
+                            android:layout_height="40dp"
+                            android:layout_column="0"
+                            android:textSize="15sp"
+                            android:layout_weight="10">
+                        </TextView>
+                        <TextView android:text="Dr. KAMALIKA"
+                            android:layout_height="40dp"
+                            android:layout_column="1"
+                            android:textSize="15sp"
+                            android:layout_weight="7">
+                        </TextView>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:onClick="checkbox_clicked"
+                            android:id="@+id/sub5"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </ScrollView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@android:color/holo_blue_dark"
+        app:cardCornerRadius="10dp" >
+
+        <Button
+            android:id="@+id/submitCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:paddingRight="10dp"
+            android:textSize="14sp"
+            android:background="@android:color/holo_blue_light"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@android:color/black"
+            android:text="REGISTER FOR SELECTED COURSES"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+</LinearLayout>
